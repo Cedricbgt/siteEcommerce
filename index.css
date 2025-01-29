@@ -10,11 +10,11 @@ header {
 }
 
 header nav {
+    padding: 30px 5% 0px 5%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    padding: 0px 50px 0px;
 }
 
 header nav h1{
@@ -59,6 +59,7 @@ header nav .menu button {
 	margin: 0;
 	font-size: 4vw;
 	width: 80%;
+    color: white;
 }
 .hero .hero-text p{
 	font-weight: 300;
@@ -69,7 +70,6 @@ header nav .menu button {
 	padding: 15px 20px;
 	font-size: 15px;
 	border-radius: 10px;
-	border: none;
 	outline: none;
 	cursor: pointer;
 }
@@ -78,12 +78,25 @@ header nav .menu button {
     width: 100%;
 }
 
+.hero button{
+    background-color: #D33BFD;
+    color: white;
+    border: 1px solid #D33BFD;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.hero button:hover{
+    background-color: inherit;
+    color: #D33BFD;
+}
+
 .hero-images{
     margin-top: 30px;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 }
+
 
 .hero-images .image{
 	padding: 20px;
