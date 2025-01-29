@@ -39,11 +39,18 @@ header nav .menu button {
 	padding: 5px 15px;
 	font-size: 16px;
 	background-color: inherit;
-	border: 1px solid purple;
-    color: purple;
+	border: 1px solid #D33BFD;
+    color: #D33BFD;
 	border-radius: 5px;
 	cursor: pointer;
+    transition: background-color 0.5s, color 0.5s;
 }
+
+header nav .menu button:hover {
+    background-color: #D33BFD;
+    color: white;
+}
+
 .hero {
     padding: 30px 5%;
     margin-top: 5%;
@@ -72,18 +79,17 @@ header nav .menu button {
 	border-radius: 10px;
 	outline: none;
 	cursor: pointer;
+    background-color: #D33BFD;
+    color: white;
+    border: 1px solid #D33BFD;
+    transition: background-color 0.5s, color 0.5s;
 }
 
 .hero .bigimg img {
     width: 100%;
 }
 
-.hero button{
-    background-color: #D33BFD;
-    color: white;
-    border: 1px solid #D33BFD;
-    transition: background-color 0.5s, color 0.5s;
-}
+
 
 .hero button:hover{
     background-color: inherit;
@@ -108,4 +114,68 @@ header nav .menu button {
 
 .hero-images .image img{
     width: 120px;
+}
+
+.secondSec .newProduct{
+    margin : 0;
+    color : #D33BFD
+}
+.secondSec{
+    margin: 0;
+    background-color: #13181D;
+}
+
+.secondSec h1{
+	margin: 0;
+	font-size: 4vw;
+	width: 80%;
+    color: white;
+}
+
+.secondSec p{
+    color: white;
+}
+
+.secondSec button{
+	margin-top: 20px;
+	padding: 15px 20px;
+	font-size: 15px;
+	border-radius: 10px;
+	outline: none;
+	cursor: pointer;
+    background-color: inherit;
+    color: #D33BFD;
+    border: 1px solid #D33BFD;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.secondSec button:hover{
+    background-color: #D33BFD;
+    color: white;
+}
+
+.productDiv{
+    width: 100%;
+    flex-shrink: 3;
+}
+
+footer {
+	margin: 0;
+	padding: 20px;
+	background-color: black;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+footer h3 {
+    color : #D33BFD;
+}
+
+footer p {
+	cursor: pointer;
+	color: #ccc;
+}
+footer p:hover {
+	color: white;
 }
