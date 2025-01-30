@@ -181,6 +181,15 @@ footer p:hover {
 }
 
 @media screen and (max-width: 640px) {
+    .hero {
+        flex-direction: column;
+    }
+    .secondSec{
+        text-align: center;
+    }
+    .secondSec h1{
+        width: 95%;
+    }
     nav .menu p{
         display: none;
     }
@@ -188,7 +197,7 @@ footer p:hover {
         font-size: 2em;
     }
     .bigimg img{
-        display: none;
+        scale: 0.8;
     }
 
     footer {
@@ -197,4 +206,22 @@ footer p:hover {
 	footer .column {
 		width: 80%;
 	}
+    .hero .hero-text h1 {
+        width: 95%;
+        text-align: center;
+        color: #D33BFD;
+    }
+    .hero-images .image img{
+        width: 80px;
+    }
+    .hero-images{
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero .hero-text {
+        text-align: center;
+    }
 }
