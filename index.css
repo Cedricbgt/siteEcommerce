@@ -179,3 +179,22 @@ footer p {
 footer p:hover {
 	color: white;
 }
+
+@media screen and (max-width: 640px) {
+    nav .menu p{
+        display: none;
+    }
+    .hero-text h1{
+        font-size: 2em;
+    }
+    .bigimg img{
+        display: none;
+    }
+
+    footer {
+		justify-content: start;
+	}
+	footer .column {
+		width: 80%;
+	}
+}
