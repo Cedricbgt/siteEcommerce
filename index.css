@@ -193,12 +193,13 @@ footer p:hover {
 .burger-menu div {
     background-color: white;
     height: 4px;
-    margin: 5px 0;
+    width: 24px;
+    margin: 3px 0;
     transition: 0.4s;
 }
 
 .change .bar1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
+    transform: rotate(-45deg) translate(-3px, 3px);
 }
 
 .change .bar2 {
