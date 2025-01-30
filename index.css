@@ -180,7 +180,87 @@ footer p:hover {
 	color: white;
 }
 
+.burger-menu {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    width: 30px;
+    height: 25px;
+}
+
+.burger-menu div {
+    background-color: white;
+    height: 4px;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: rotate(45deg) translate(-7px, -7px);
+}
+
+.dropdown-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #15191F;
+    position: fixed;
+    top: 0;
+    left: -105%;
+    width: 100%;
+    height: 100%;
+    transition: left 0.4s;
+    padding: 60px 10px;
+    z-index: 1;
+}
+
+.dropdown-menu.show {
+    left: 0;
+}
+
+
 @media screen and (max-width: 640px) {
+    .burger-menu {
+        display: block;
+        z-index: 10;
+    }
+    .dropdown-menu{
+        display: block;
+        text-align: center;
+        font-size: 2em;
+        opacity: 0.97;
+    }
+    .dropdown-menu p{
+        color: #D33BFD;
+        font-weight: 300;
+    }
+    .dropdown-menu .buy{
+        margin-top: 20px;
+        padding: 15px 20px;
+        font-size: 15px;
+        border-radius: 10px;
+        outline: none;
+        cursor: pointer;
+        background-color: inherit;
+        color: #D33BFD;
+        border: 1px solid #D33BFD;
+        transition: background-color 0.5s, color 0.5s;
+    }
+    .menu {
+        display: none;
+    }
+    header nav .menu button {
+        display: none;
+    }
     .hero {
         flex-direction: column;
     }
@@ -191,6 +271,9 @@ footer p:hover {
         width: 95%;
     }
     nav .menu p{
+        display: none;
+    }
+    nav .menu .buy{
         display: none;
     }
     .hero-text h1{
@@ -223,5 +306,8 @@ footer p:hover {
     }
     .hero .hero-text {
         text-align: center;
+    }
+    .no-scroll {
+        overflow: hidden;
     }
 }
