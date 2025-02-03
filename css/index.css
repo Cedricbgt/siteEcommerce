@@ -15,6 +15,7 @@ header nav {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+
 }
 
 header nav h1{
@@ -294,6 +295,7 @@ footer p:hover {
         width: 95%;
         text-align: center;
         color: #D33BFD;
+        font-size: 1.3em;
     }
     .hero-images .image img{
         width: 80px;
