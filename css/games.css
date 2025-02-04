@@ -2,14 +2,18 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
     height: 100vh;
     margin: 0;
     background: linear-gradient(#15191F, #331B46);
-    flex-wrap: wrap;
+}
+
+.jeux{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100vh;
 }
 
 .jeu{
