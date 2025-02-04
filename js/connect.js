@@ -46,6 +46,7 @@ document.getElementById('loginFormElement').addEventListener('submit', function(
         const storedUser = JSON.parse(localStorage.getItem(loginEmail.value));
         if (storedUser && storedUser.password === loginPassword.value) {
             alert('Connexion réussie');
+            localStorage.setItem('isLogged', 'true'); // Stocker l'état de connexion
             window.location.href = 'index.html'; // Rediriger vers la page d'accueil ou une autre page
         } else {
             loginPasswordError.textContent = 'Email ou mot de passe incorrect';

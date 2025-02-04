@@ -7,17 +7,44 @@
     <link rel="stylesheet" href="/css/games.css">
 </head>
 <body>
-    <div class="jeu1">
-            <h3>Jeu 1</h3>
-            <img src="" alt="">
-            <p>Un jeu de course de voitures</p>
-            <button class="jeu1-button">Jouer</button>
+
+    <div class="jeu">
+        <h3>Jeu 1</h3>
+        <img src="/asset/test.png" alt="">
+        <p>Un jeu d'aventure</p>
+        <section class="button">
+            <button class="button-8" role="button">Jouer</button>
+            <button class="button-8 score-btn" role="button">Score</button>
+        </section>
     </div>
-    <div>
+    <div class="jeu">
         <h3>Jeu 2</h3>
+        <img src="/asset/test.png" alt="">
+        <p>Un jeu d'aventure</p>
+        <section class="button">
+            <button class="button-8" role="button">Jouer</button>
+            <button class="button-8 score-btn" role="button">Score</button>
+        </section>
     </div>
-    <div>
+    <div class="jeu">
         <h3>Jeu 3</h3>
+        <img src="/asset/test.png" alt="">
+        <p>Un jeu d'aventure</p>
+        <section class="button">
+            <button class="button-8" role="button">Jouer</button>
+            <button class="button-8 score-btn" role="button">Score</button>
+        </section>
     </div>
+
+    <!-- Fenêtre modale -->
+    <div id="scoreModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Scores</h2>
+            <p>Les scores seront affichés ici.</p>
+        </div>
+    </div>
+
+    <script src="/js/games.js"></script>
 </body>
 </html>
