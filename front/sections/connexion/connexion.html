@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion/Inscription</title>
+</head>
+<body>
+    <div class="form">
+        <div class="tab">
+            <div id="registerTab" class="active">Inscription</div>
+            <div id="loginTab">Connexion</div>
+        </div>
+
+        <div id="registerForm" class="form-container active">
+            <h2>Inscription</h2>
+            <form id="registerFormElement">
+                <label for="registerEmail">Email:</label>
+                <input type="email" id="registerEmail" name="registerEmail" required placeholder="Email">
+                <span class="error-message" id="registerEmailError"></span><br><br>
+                <label for="registerPassword">Mot de passe:</label>
+                <input type="password" id="registerPassword" name="registerPassword" required placeholder="Mot de passe">
+                <span class="error-message" id="registerPasswordError"></span><br><br>
+                <label for="registerConfirmPassword">Confirmer le mot de passe:</label>
+                <input type="password" id="registerConfirmPassword" name="registerConfirmPassword" required placeholder="Confirmer mot de passe">
+                <span class="error-message" id="registerConfirmPasswordError"></span><br><br>
+                <button type="submit" class="btn">S'inscrire</button>
+            </form>
+        </div>
+
+        <div id="loginForm" class="form-container">
+            <h2>Connexion</h2>
+            <form id="loginFormElement">
+                <label for="loginEmail">Email:</label>
+                <input type="email" id="loginEmail" name="loginEmail" required placeholder="Email">
+                <span class="error-message" id="loginEmailError"></span><br><br>
+                <label for="loginPassword">Mot de passe:</label>
+                <input type="password" id="loginPassword" name="loginPassword" required placeholder="Mot de passe">
+                <span class="error-message" id="loginPasswordError"></span><br><br>
+                <button type="submit" class="btn">Se connecter</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
