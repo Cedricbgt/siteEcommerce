@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         if (scrollTop > lastScrollTop) {
             // Scroll down
-            navbar.style.top = '-100px'; // Cache la navbar
+            navbar.style.top = '-100px'; 
         } else {
             // Scroll up
             navbar.style.top = '0';

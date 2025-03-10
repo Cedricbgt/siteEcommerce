@@ -226,7 +226,7 @@ footer p:hover {
 }
 
 .dropdown-menu.show {
-    left: 0;
+    left: 1;
 }
 
 
