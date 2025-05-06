@@ -1,41 +1,47 @@
+<!-- games.html -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Les jeux</title>
-    <link rel="stylesheet" href="/css/games.css">
+    <title>Les Jeux</title>
+    <link rel="stylesheet" href="css/games.css">
 </head>
 <body>
-    <Section class="jeux">
+    <header class="navbar">
+        <h1>Les Jeux</h1>
+        <a href="./index.html">Retour à l'accueil</a>
+    </header>
+
+    <section class="jeux">
         <div class="jeu">
             <h3>Jeu 1</h3>
-            <img src="/asset/test.png" alt="">
-            <p>Un jeu d'aventure</p>
-            <section class="button">
-                <button class="button-8" role="button">Jouer</button>
-                <button class="button-8 score-btn" role="button">Score</button>
-            </section>
+            <img src="asset/test.png" alt="Jeu PvP">
+            <p>Un jeu PvP</p>
+            <div class="button">
+                <button class="button-8" onclick="window.location.href='https://jeu-pvp.vercel.app/'">Jouer</button>
+                <button class="button-8 score-btn">Score</button>
+            </div>
         </div>
         <div class="jeu">
             <h3>Jeu 2</h3>
-            <img src="/asset/test.png" alt="">
-            <p>Un jeu d'aventure</p>
-            <section class="button">
-                <button class="button-8" role="button">Jouer</button>
-                <button class="button-8 score-btn" role="button">Score</button>
-            </section>
+            <img src="asset/test2.png" alt="Candy Crush">
+            <p>Candy Crush</p>
+            <div class="button">
+                <button class="button-8" onclick="window.location.href='https://jeu-candy-crush.vercel.app/'">Jouer</button>
+                <button class="button-8 score-btn">Score</button>
+            </div>
         </div>
         <div class="jeu">
             <h3>Jeu 3</h3>
-            <img src="/asset/test.png" alt="">
-            <p>Un jeu d'aventure</p>
-            <section class="button">
-                <button class="button-8" role="button">Jouer</button>
-                <button class="button-8 score-btn" role="button">Score</button>
-            </section>
+            <img src="asset/test3.png" alt="Dungeon Crawler">
+            <p>Dungeon crawler</p>
+            <div class="button">
+                <button class="button-8" onclick="window.location.href='https://cedricbgt.github.io/'">Jouer</button>
+                <button class="button-8 score-btn">Score</button>
+            </div>
         </div>
-    </Section>
+    </section>
 
     <!-- Fenêtre modale -->
     <div id="scoreModal" class="modal">
@@ -46,6 +52,6 @@
         </div>
     </div>
 
-    <script src="/js/games.js"></script>
+    <script src="js/games.js"></script>
 </body>
 </html>

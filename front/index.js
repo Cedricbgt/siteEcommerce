@@ -4,6 +4,13 @@ document.querySelectorAll('.li').forEach(item => {
         document.querySelectorAll('.li').forEach(nav => nav.classList.remove('active'));
         item.classList.add('active');
         const section = item.getAttribute('data-section');
+        
+        // Redirection spéciale pour la section "games"
+        if (section === 'games') {
+            window.location.href = './games.html';
+            return;
+        }
+        
         loadSection(section);
     });
 });
